@@ -36,6 +36,10 @@ Ideal para igrejas, escolas, quermesses, bares e festas beneficentes.
 - Autenticação simples (Firebase Auth)
 - Customização de regras (75 vs 90 números)
 
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
 ---
 
 Martins Labs © 2026  
