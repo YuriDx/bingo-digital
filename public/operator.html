@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bingo - Operador</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+</head>
+<body>
+  <header style="padding: 1rem; text-align: center; border-bottom: 1px solid #eee;">
+    <h1>👨‍💼 Modo Operador</h1>
+    <div>Bingo Digital</div>
+  </header>
+
+  <main style="padding: 1.5rem; max-width: 800px; margin: 0 auto;">
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; align-items: center;">
+      <button id="draw-btn" class="btn">Sortear Número (ESPAÇO)</button>
+      <button id="reset-btn" class="btn" style="background:#d93025;">Reiniciar Jogo</button>
+      <button id="print-cards" class="btn" style="background:#34a853;">Gerar Cartelas (PDF)</button>
+      <button id="toggle-theme" class="btn" style="background:#f9ab00;">Modo Escuro</button>
+      <button id="toggle-sound" class="btn" style="background:#9c27b0;">Som: LIGADO</button>
+    </div>
+
+    <h3 style="margin-top: 2rem;">⚙️ Configuração de Números</h3>
+    <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 2rem;">
+      <label>
+        De: <input type="number" id="min-num" min="1" max="99" value="1" style="width: 60px;">
+      </label>
+      <label>
+        Até: <input type="number" id="max-num" min="2" max="100" value="75" style="width: 60px;">
+      </label>
+      <button id="apply-range" class="btn" style="background:#f9ab00;">Aplicar</button>
+    </div>
+
+    <div id="current" style="margin: 1.5rem 0; font-size: 2.5rem; text-align: center; font-weight: bold;">
+      Aguardando sorteio...
+    </div>
+
+    <h3>Números Sorteados:</h3>
+    <div id="history-list" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;"></div>
+
+    <h3 style="margin-top: 2rem;">🎉 Declaração de Vitória</h3>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <button id="bingo-line" class="btn" style="background:#0f9d58;">Horizontal (H)</button>
+      <button id="bingo-column" class="btn" style="background:#4285f4;">Vertical (V)</button>
+      <button id="bingo-full" class="btn" style="background:#db4437;">Cartela Cheia! (F)</button>
+    </div>
+  </main>
+
+
+  <script type="module" src="../src/js/ui/operator-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+</html>

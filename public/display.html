@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bingo - Exibição</title>
+  <link rel="stylesheet" href="../src/css/style.css">
+  <style>
+    body { background: #000; color: white; }
+    .display-screen { animation: pulse 1.5s infinite; }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body class="dark-mode">
+  <div class="display-screen">
+    <div id="current-number" class="number-display">—</div>
+    <div id="history" class="history"></div>
+    <div style="margin-top: 2rem; font-size: 1.2rem;">
+      <img src="../src/assets/logo.svg" alt="Martins Labs" height="36">
+    </div>
+  </div>
+
+  <script type="module" src="../src/js/ui/display-ui.js"></script>
+</body>
+</html>
