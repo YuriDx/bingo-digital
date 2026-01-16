@@ -1,47 +1,58 @@
 # Bingo Digital 🎲
 
-[![Offline First](https://img.shields.io/badge/-Offline%20First-green?logo=offline)](https://whatpwadisabled.org/)
-[![Vanilla JS](https://img.shields.io/badge/-Vanilla%20JS-black?logo=javascript)]
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+> Um presente para minha mãe — e para todos que organizam bingos com amor.
 
-Aplicativo offline de bingo para igrejas, escolas, quermesses, bares e eventos beneficentes.  
-Totalmente funcional no navegador — **sem internet, sem cadastro, sem complicação**.
+Aplicativo offline de bingo para **igrejas, quermesses, festas familiares e eventos comunitários**.  
+Totalmente gratuito, sem cadastro, sem internet, sem complicação.
 
+✅ Funciona em qualquer navegador moderno  
 ✅ Modo operador + tela de exibição para telão  
-✅ Sons e atalhos de teclado (ESPAÇO, H, V, F)  
-✅ Faixa numérica personalizável (ex: 1–90)  
-✅ Animações de vitória (Horizontal, Vertical, Cartela Cheia!)  
-✅ Geração de cartelas em PDF  
-✅ Funciona offline — ideal para locais sem rede
+✅ Sons suaves e atalhos de teclado  
+✅ Números sorteados em ordem numérica (fácil conferência)  
+✅ Declaração de vitória com confirmação (Enter/ESC)  
+✅ Funciona 100% offline — ideal para locais sem rede
 
 ---
 
-## ▶️ Experimente agora
+## ▶️ Como usar
 
-👉 **[Clique aqui para usar o Bingo Digital](https://martinslabs-bingo.netlify.app)**
+1. Abra o [Bingo Digital online](https://martinslabs-bingo.netlify.app)
+2. Em um dispositivo, clique em **"Modo Operador"**
+3. Em outro (TV, projetor, celular grande), clique em **"Modo Exibição (Público)"**
+4. Sorteie números com **ESPAÇO** ou clique no botão
+5. Ao gritarem "BINGO!", declare a vitória (**H** = Horizontal, **V** = Vertical, **F** = Cartela Cheia)
+6. Pressione **ENTER** para confirmar ou **ESC** para cancelar
 
-Abra em dois dispositivos:
-- Um como **Operador** (quem controla o sorteio)
-- Outro como **Exibição** (telão para o público)
-
----
-
-## 🛠 Tecnologias
-
-- HTML5, CSS3, JavaScript puro (ES6+)
-- jsPDF (via CDN) para exportação
-- Web Audio API para sons
-- localStorage para estado offline
-- Totalmente responsivo e acessível
+> 💡 Dica: use dois celulares! Um como operador, outro como telão.
 
 ---
 
-## 🚀 Feito com ❤️ por [Martins Labs](https://www.instagram.com/martins_labs/)
+## 🖥️ Rodar localmente
 
-Siga a gente no Instagram para acompanhar novos projetos, dicas de tecnologia e bastidores do desenvolvimento!  
-📸 [@martins_labs](https://www.instagram.com/martins_labs/)
+1. Baixe ou clone este repositório
+2. Abra a pasta `bingo-digital`
+3. Com um servidor local (ex: VS Code + Live Server), abra:
+   - `public/index.html`
+4. Pronto! Funciona exatamente como online.
 
-> Este projeto é open source, mas faz parte da jornada da **Martins Labs** em criar ferramentas simples, robustas e úteis para comunidades locais.
+> ⚠️ Não abra os arquivos diretamente com `file://` — use um servidor local para evitar erros de segurança.
+
+---
+
+## 🌐 Deploy
+
+Este projeto está hospedado gratuitamente no Netlify:  
+👉 [https://martinslabs-bingo.netlify.app](https://martinslabs-bingo.netlify.app)
+
+---
+
+## 💌 Feito com amor
+
+Desenvolvido por **Yuri** como presente para os bingos da minha mãe.  
+Se este app ajudou seu evento, me marque no Instagram! 📸 [@martins_labs](https://www.instagram.com/martins_labs/)
+
+> Este projeto é open source e gratuito para sempre.  
+> Feito com ❤️ por Martins Labs — não para lucrar, mas para compartilhar.
 
 ---
 
