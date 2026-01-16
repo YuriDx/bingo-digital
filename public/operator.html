@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <meta name="mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="theme-color" content="#1a73e8">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bingo - Operador</title>
@@ -13,13 +16,16 @@
   </header>
 
   <main style="padding: 1.5rem; max-width: 800px; margin: 0 auto;">
+    <!-- Grupo: Sorteio -->
     <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; align-items: center;">
-      <button id="draw-btn" class="btn">Sortear Número (ESPAÇO)</button>
-      <button id="reset-btn" class="btn" style="background:#d93025;">Reiniciar Jogo</button>
-      <button id="print-cards" class="btn" style="background:#34a853;">Gerar Cartelas (PDF)</button>
-      <button id="toggle-theme" class="btn" style="background:#f9ab00;">Modo Escuro</button>
-      <button id="toggle-sound" class="btn" style="background:#9c27b0;">Som: LIGADO</button>
+      <button id="draw-btn" class="btn">🎲 Sortear Número (ESPAÇO)</button>
+      <button id="reset-btn" class="btn" style="background:#d93025;">🔄 Reiniciar Jogo</button>
+      <button id="toggle-theme" class="btn" style="background:#f9ab00;">🌙 Modo Escuro</button>
+      <button id="toggle-sound" class="btn" style="background:#9c27b0;">🔊 Som: LIGADO</button>
     </div>
+
+    <!-- Contador de números -->
+    <div id="counter" style="text-align: center; font-size: 1.1rem; margin: 1rem 0; color: #5f6368;"></div>
 
     <h3 style="margin-top: 2rem;">⚙️ Configuração de Números</h3>
     <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 2rem;">
@@ -45,10 +51,13 @@
       <button id="bingo-column" class="btn" style="background:#4285f4;">Vertical (V)</button>
       <button id="bingo-full" class="btn" style="background:#db4437;">Cartela Cheia! (F)</button>
     </div>
+    <div style="text-align: center; margin-top: 2.5rem; font-size: 0.9rem; color: #5f6368; padding-top: 1.5rem; border-top: 1px solid #eee;">
+   Feito com ❤️ por 
+   <a href="https://www.instagram.com/martins_labs/" target="_blank" style="color: #1a73e8; text-decoration: none;">Martins Labs</a>
+   • @martins_labs
+</div>
   </main>
 
-
   <script type="module" src="./js/ui/operator-ui.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>
 </html>
